@@ -84,7 +84,7 @@ export const createLicenseManager = (
           throwHttpErrors: false,
           timeout: options?.timeout ?? 15000,
           form: {
-            product_permalink: productId,
+            product_id: productId,
             license_key: licenseKey.trim(),
             increment_uses_count: increaseUseCount,
           },
